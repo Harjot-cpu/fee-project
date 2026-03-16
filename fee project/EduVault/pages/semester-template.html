@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semester 4 — EduVault</title>
+  <meta name="description" content="Semester 4 study material: Operating Systems, Computer Networks, Theory of Computation and Web Development." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
+</head>
+<body class="theme-host dark-theme">
+
+  <!-- Progress bar -->
+  <div class="progress-bar" aria-hidden="true"></div>
+
+  <!-- ── NAVBAR ──── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="logo-wrap" aria-label="EduVault Home">
+      <svg class="logo-svg" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M21 2L4 10V22C4 30.8 11.5 38.7 21 41C30.5 38.7 38 30.8 38 22V10L21 2Z" fill="#1C3461" stroke="#2563EB" stroke-width="1.5"/>
+        <path d="M21 2L4 10V22C4 30.8 11.5 38.7 21 41C30.5 38.7 38 30.8 38 22V10L21 2Z" fill="url(#shield-grad2)" opacity="0.3"/>
+        <text x="9" y="27" font-family="Syne, sans-serif" font-weight="800" font-size="14" fill="#F8F9FC">E</text>
+        <text x="20" y="27" font-family="Syne, sans-serif" font-weight="800" font-size="14" fill="#3B82F6">V</text>
+        <defs>
+          <linearGradient id="shield-grad2" x1="4" y1="2" x2="38" y2="41" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#2563EB"/><stop offset="1" stop-color="#1C3461"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="logo-text">Edu<span>Vault</span></span>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#semesters">Semesters</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+      <li><a href="../index.html#semesters" class="nav-cta">All Semesters</a></li>
+    </ul>
+
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="../index.html">Home</a>
+    <a href="../index.html#semesters">Semesters</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </div>
+
+  <!-- ── PAGE HERO ──── -->
+  <header class="page-hero" role="banner">
+    <div class="page-hero-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep" aria-hidden="true">›</span>
+        <a href="../index.html#semesters">Semesters</a>
+        <span class="breadcrumb-sep" aria-hidden="true">›</span>
+        <span aria-current="page">Semester 4</span>
+      </nav>
+
+      <div class="hero-badge" style="margin-bottom:16px;">
+        <span class="hero-badge-dot"></span>
+        Year 2 · Semester 4
+      </div>
+
+      <h1 class="page-title">Semester <span class="highlight">4</span></h1>
+      <p style="font-size:1rem; color:var(--slate); max-width:560px; line-height:1.75; margin-bottom:20px;">
+        Operating Systems, Computer Networks, Theory of Computation, and Web Development — the core CS backbone of Year 2.
+      </p>
+
+      <div class="page-meta" role="list">
+        <span class="meta-chip" role="listitem">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          4 Subjects
+        </span>
+        <span class="meta-chip" role="listitem">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          ~40 Hours of Study
+        </span>
+        <span class="meta-chip" role="listitem">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          50 Questions
+        </span>
+        <span class="meta-chip" role="listitem">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          8 References
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── TAB SECTION ──── -->
+  <main class="tab-section" id="main-content">
+    <div class="tab-section-inner">
+
+      <!-- Tab Navigation -->
+      <nav class="tabs-nav" role="tablist" aria-label="Semester content tabs">
+        <button class="tab-btn active" role="tab" data-tab="topics" aria-selected="true" aria-controls="topics">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+          Topics to Study
+        </button>
+        <button class="tab-btn" role="tab" data-tab="theory" aria-selected="false" aria-controls="theory">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          Theory Notes
+        </button>
+        <button class="tab-btn" role="tab" data-tab="questions" aria-selected="false" aria-controls="questions">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          Questions
+        </button>
+        <button class="tab-btn" role="tab" data-tab="references" aria-selected="false" aria-controls="references">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          References
+        </button>
+      </nav>
+
+      <!-- ── PANEL 1: TOPICS ──── -->
+      <div id="topics" class="tab-panel active" role="tabpanel" aria-labelledby="tab-topics">
+        <!-- Search/Filter -->
+        <div class="filter-bar">
+          <div class="search-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input class="search-input" type="search" placeholder="Search topics…" aria-label="Search topics" />
+          </div>
+          <div class="filter-chips" role="group" aria-label="Filter by subject">
+            <button class="filter-chip active" data-filter="all">All Subjects</button>
+            <button class="filter-chip" data-filter="os">OS</button>
+            <button class="filter-chip" data-filter="cn">Networks</button>
+            <button class="filter-chip" data-filter="toc">TOC</button>
+            <button class="filter-chip" data-filter="web">Web Dev</button>
+          </div>
+        </div>
+
+        <div class="topics-grid">
+          <div class="topic-card fade-in" data-tag="os">
+            <div class="topic-header">
+              <span class="topic-num">01</span>
+              <span class="topic-badge">Operating Systems</span>
+            </div>
+            <h3>Process Management</h3>
+            <p>Process lifecycle, PCB, context switching, threads vs. processes, and inter-process communication.</p>
+            <div class="topic-progress"><div class="topic-progress-fill" style="width:90%"></div></div>
+          </div>
+          <div class="topic-card fade-in" data-tag="os">
+            <div class="topic-header">
+              <span class="topic-num">02</span>
+              <span class="topic-badge">Operating Systems</span>
+            </div>
+            <h3>CPU Scheduling</h3>
+            <p>FCFS, SJF, Round Robin, Priority Scheduling — algorithms, Gantt charts and performance metrics.</p>
+            <div class="topic-progress"><div class="topic-progress-fill" style="width:85%"></div></div>
+          </div>
+          <div class="topic-card fade-in" data-tag="os">
+            <div class="topic-header">
+              <span class="topic-num">03</span>
+              <span class="topic-badge">Operating Systems</span>
+            </div>
+            <h3>Memory Management</h3>
+            <p>Paging, segmentation, virtual memory, page replacement algorithms (FIFO, LRU, Optimal).</p>
+            <div class="topic-progress"><div class="topic-progress-fill" style="width:75%"></div></div>
+          </div>
+          <div class="topic-card fade-in" data-tag="cn">
+            <div class="topic-header">
+              <span class="topic-num">04</span>
+              <span class="topic-badge">Networks</span>
+            </div>
+            <h3>OSI & TCP/IP Model</h3>
+            <p>7 layers of OSI, 4-layer TCP/IP stack, comparison, and functions of each layer.</p>
+            <div class="topic-progress"><div class="topic-progress-fill" style="width:95%"></div></div>
+          </div>
+          <div class="topic-card fade-in" data-tag="cn">
+            <div class="topic-header">
+              <span class="topic-num">05</span>
+              <span class="topic-badge">Networks</span>
+            </div>
+            <h3>Routing Protocols</h3>
+            <p>Static vs. dynamic routing, RIP, OSPF, BGP, distance vector and link state algorithms.</p>
+            <div class="topic-progress"><div class="topic-progress-fill" style="width:65%"></div></div>
+          </div>
+          <div class="topic-card fade-in" data-tag="toc">
+            <div class="topic-header">
+              <span class="topic-num">06</span>
+              <span class="topic-badge">TOC</span>
+            </div>
+            <h3>Finite Automata</h3>
+            <p>DFA, NFA, NFA to DFA conversion, minimization of DFA, and regular expressions.</p>
+            <div class="topic-progress"><div class="topic-progress-fill" style="width:80%"></div></div>
+          </div>
+          <div class="topic-card fade-in" data-tag="toc">
+            <div class="topic-header">
+              <span class="topic-num">07</span>
+              <span class="topic-badge">TOC</span>
+            </div>
+            <h3>Context-Free Grammars</h3>
+            <p>CFG, derivations, parse trees, CNF, GNF, and pushdown automata (PDA).</p>
+            <div class="topic-progress"><div class="topic-progress-fill" style="width:60%"></div></div>
+          </div>
+          <div class="topic-card fade-in" data-tag="web">
+            <div class="topic-header">
+              <span class="topic-num">08</span>
+              <span class="topic-badge">Web Dev</span>
+            </div>
+            <h3>HTML5 & CSS3</h3>
+            <p>Semantic HTML, Flexbox, Grid, responsive design, and CSS custom properties.</p>
+            <div class="topic-progress"><div class="topic-progress-fill" style="width:100%"></div></div>
+          </div>
+          <div class="topic-card fade-in" data-tag="web">
+            <div class="topic-header">
+              <span class="topic-num">09</span>
+              <span class="topic-badge">Web Dev</span>
+            </div>
+            <h3>JavaScript & DOM</h3>
+            <p>ES6+ features, event handling, fetch API, async/await, and local storage.</p>
+            <div class="topic-progress"><div class="topic-progress-fill" style="width:88%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PANEL 2: THEORY ──── -->
+      <div id="theory" class="tab-panel" role="tabpanel" aria-labelledby="tab-theory">
+        <div class="theory-content">
+          <!-- Sticky index -->
+          <aside class="theory-index" aria-label="Theory index">
+            <h4>Contents</h4>
+            <nav class="index-list">
+              <a href="#t-os-proc" class="index-link active">Process Management</a>
+              <a href="#t-os-sched" class="index-link">CPU Scheduling</a>
+              <a href="#t-cn-osi" class="index-link">OSI Model</a>
+              <a href="#t-toc-dfa" class="index-link">Finite Automata</a>
+            </nav>
+          </aside>
+
+          <!-- Articles -->
+          <div class="theory-articles">
+
+            <article class="theory-article fade-in" id="t-os-proc">
+              <span class="article-tag">Operating Systems</span>
+              <h2>Process Management</h2>
+              <p>A <strong>process</strong> is a program in execution. The OS manages all running processes using a data structure called the <strong>Process Control Block (PCB)</strong>, which stores the process ID, state, program counter, CPU registers, memory limits, and I/O status.</p>
+              <p>Process states include: <strong>New → Ready → Running → Waiting → Terminated</strong>. When the CPU switches from one process to another, the OS saves the current process state and loads the next — this is called a <strong>context switch</strong>.</p>
+              <code>
+PCB Structure:
+  - Process ID (PID)
+  - Process State (New, Ready, Running, Waiting, Terminated)
+  - Program Counter (PC)
+  - CPU Registers
+  - Memory Management Info
+  - I/O Status Information
+  - Accounting Information
+              </code>
+              <p>Threads are lightweight processes that share the same memory space. Multi-threading improves CPU utilization and responsiveness.</p>
+            </article>
+
+            <article class="theory-article fade-in" id="t-os-sched">
+              <span class="article-tag">Operating Systems</span>
+              <h2>CPU Scheduling Algorithms</h2>
+              <p>The CPU scheduler selects a process from the ready queue and allocates the CPU. Key performance metrics include:</p>
+              <p><strong>CPU Utilization</strong> (maximize), <strong>Throughput</strong> (maximize), <strong>Turnaround Time</strong> (minimize), <strong>Waiting Time</strong> (minimize), <strong>Response Time</strong> (minimize).</p>
+              <code>
+FCFS (First Come First Served):
+  Processes executed in arrival order.
+  Non-preemptive. Simple but can cause convoy effect.
+
+SJF (Shortest Job First):
+  Process with smallest burst time first.
+  Optimal average waiting time, but needs future burst time.
+
+Round Robin (Time Quantum = q):
+  Each process gets q ms of CPU time.
+  Preemptive. Good for interactive systems.
+  Larger q → FCFS. Smaller q → high context switch overhead.
+              </code>
+            </article>
+
+            <article class="theory-article fade-in" id="t-cn-osi">
+              <span class="article-tag">Computer Networks</span>
+              <h2>The OSI Model — 7 Layers</h2>
+              <p>The <strong>Open Systems Interconnection (OSI)</strong> model provides a conceptual framework that standardizes the communication functions of a network into seven layers.</p>
+              <code>
+Layer 7 — Application    : HTTP, FTP, DNS, SMTP
+Layer 6 — Presentation   : Encryption, Compression, JPEG
+Layer 5 — Session        : Manages sessions (NetBIOS, RPC)
+Layer 4 — Transport      : TCP (reliable), UDP (fast)
+Layer 3 — Network        : IP addressing, Routing (IP, ICMP)
+Layer 2 — Data Link      : MAC addresses, Framing (Ethernet)
+Layer 1 — Physical       : Bits on wire (cables, signals)
+
+Mnemonic: "All People Seem To Need Data Processing"
+              </code>
+              <p>The <strong>TCP/IP model</strong> collapses OSI's 7 layers into 4: Application, Transport, Internet, and Network Access.</p>
+            </article>
+
+            <article class="theory-article fade-in" id="t-toc-dfa">
+              <span class="article-tag">Theory of Computation</span>
+              <h2>Deterministic Finite Automaton (DFA)</h2>
+              <p>A DFA is a 5-tuple M = (Q, Σ, δ, q₀, F) where Q is a finite set of states, Σ is the input alphabet, δ is the transition function, q₀ is the start state, and F is the set of accept states.</p>
+              <code>
+DFA that accepts strings ending with '01':
+  States: q0 (start), q1, q2 (accept)
+  Alphabet: {0, 1}
+
+  Transition Table:
+  State | 0  | 1
+  ------+----+---
+   q0   | q1 | q0
+   q1   | q1 | q2
+   q2   | q1 | q0
+
+  String "001" → q0 -0→ q1 -0→ q1 -1→ q2 ✓ ACCEPTED
+  String "010" → q0 -0→ q1 -1→ q2 -0→ q1 ✗ REJECTED
+              </code>
+              <p>A <strong>NFA</strong> allows multiple transitions on the same input and ε-transitions. Every NFA can be converted to an equivalent DFA (Subset Construction).</p>
+            </article>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PANEL 3: QUESTIONS ──── -->
+      <div id="questions" class="tab-panel" role="tabpanel" aria-labelledby="tab-questions">
+        <div class="filter-bar">
+          <div class="search-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input class="search-input" type="search" placeholder="Search questions…" aria-label="Search questions" />
+          </div>
+          <div class="filter-chips" role="group" aria-label="Filter by difficulty">
+            <button class="filter-chip active" data-filter="all">All</button>
+            <button class="filter-chip" data-filter="easy">Easy</button>
+            <button class="filter-chip" data-filter="medium">Medium</button>
+            <button class="filter-chip" data-filter="hard">Hard</button>
+          </div>
+        </div>
+
+        <div class="questions-list" role="list">
+
+          <div class="question-item" role="listitem" data-tag="easy">
+            <div class="question-header">
+              <div class="question-meta">
+                <span class="q-num">Q1</span>
+                <h3>What is a process? Differentiate between a process and a program.</h3>
+              </div>
+              <div style="display:flex; align-items:center; gap:10px;">
+                <span class="q-difficulty easy">Easy</span>
+                <div class="q-toggle" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="question-body">
+              <p><strong>Program:</strong> A static set of instructions stored in a file on disk. It is a passive entity.</p>
+              <p><strong>Process:</strong> A program in execution. It is an active entity that includes the program code, current activity (program counter), stack, heap, and data section. Multiple instances of the same program can run as separate processes, each with its own PCB.</p>
+              <p style="margin-top:8px; color:var(--blue-bright); font-size:0.85rem; font-weight:600;">🎯 Tip: A common exam question — always mention PCB, states, and resources.</p>
+            </div>
+          </div>
+
+          <div class="question-item" role="listitem" data-tag="medium">
+            <div class="question-header">
+              <div class="question-meta">
+                <span class="q-num">Q2</span>
+                <h3>Consider 3 processes with burst times 24, 3, 3. Calculate average waiting time for FCFS and SJF.</h3>
+              </div>
+              <div style="display:flex; align-items:center; gap:10px;">
+                <span class="q-difficulty medium">Medium</span>
+                <div class="q-toggle" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="question-body">
+              <p><strong>FCFS (arrival order: P1=24, P2=3, P3=3):</strong></p>
+              <p>Waiting times: P1=0, P2=24, P3=27 → Avg = (0+24+27)/3 = <strong>17 ms</strong></p>
+              <p style="margin-top:10px;"><strong>SJF (sorted: P2=3, P3=3, P1=24):</strong></p>
+              <p>Waiting times: P2=0, P3=3, P1=6 → Avg = (0+3+6)/3 = <strong>3 ms</strong></p>
+              <p style="margin-top:8px; color:var(--blue-bright); font-size:0.85rem; font-weight:600;">🎯 SJF gives optimal average waiting time among non-preemptive algorithms.</p>
+            </div>
+          </div>
+
+          <div class="question-item" role="listitem" data-tag="medium">
+            <div class="question-header">
+              <div class="question-meta">
+                <span class="q-num">Q3</span>
+                <h3>Explain the OSI model with the functions of each layer.</h3>
+              </div>
+              <div style="display:flex; align-items:center; gap:10px;">
+                <span class="q-difficulty medium">Medium</span>
+                <div class="q-toggle" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="question-body">
+              <p>The <strong>OSI (Open Systems Interconnection)</strong> model has 7 layers:</p>
+              <p><strong>1. Physical:</strong> Transmits raw bits (cables, hubs).</p>
+              <p><strong>2. Data Link:</strong> MAC addressing, error detection, framing (Ethernet, switches).</p>
+              <p><strong>3. Network:</strong> Logical addressing and routing (IP, routers).</p>
+              <p><strong>4. Transport:</strong> End-to-end delivery, flow/error control (TCP, UDP).</p>
+              <p><strong>5. Session:</strong> Session management, synchronization (NetBIOS).</p>
+              <p><strong>6. Presentation:</strong> Data translation, encryption, compression (SSL/TLS).</p>
+              <p><strong>7. Application:</strong> User interface to network services (HTTP, FTP, DNS).</p>
+              <p style="margin-top:8px; color:var(--blue-bright); font-size:0.85rem; font-weight:600;">🎯 Mnemonic: "All People Seem To Need Data Processing" (top to bottom).</p>
+            </div>
+          </div>
+
+          <div class="question-item" role="listitem" data-tag="hard">
+            <div class="question-header">
+              <div class="question-meta">
+                <span class="q-num">Q4</span>
+                <h3>Construct a DFA for the language L = {w ∈ {0,1}* | w ends with '00'}.</h3>
+              </div>
+              <div style="display:flex; align-items:center; gap:10px;">
+                <span class="q-difficulty hard">Hard</span>
+                <div class="q-toggle" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="question-body">
+              <p>DFA M = (Q, Σ, δ, q0, F) where Q = {q0, q1, q2}, Σ = {0,1}, F = {q2}</p>
+              <p><strong>Transition Table:</strong></p>
+              <p style="font-family: monospace; background: rgba(0,0,0,0.3); padding:12px; border-radius:8px; margin:10px 0; line-height:2; font-size:0.85rem;">
+                State | 0  | 1<br>
+                ------+----+-----<br>
+                →q0   | q1 | q0<br>
+                &nbsp;q1   | q2 | q0<br>
+                *q2   | q2 | q0
+              </p>
+              <p><strong>Explanation:</strong> q0 = "haven't seen 0 yet", q1 = "seen exactly one trailing 0", q2 = "seen two or more trailing 0s" (accept state). Any 1 resets to q0.</p>
+              <p style="margin-top:8px; color:var(--blue-bright); font-size:0.85rem; font-weight:600;">🎯 Always verify with a few test strings. "100" → q0→q1→q2→q2 ✓</p>
+            </div>
+          </div>
+
+          <div class="question-item" role="listitem" data-tag="easy">
+            <div class="question-header">
+              <div class="question-meta">
+                <span class="q-num">Q5</span>
+                <h3>What is the difference between TCP and UDP? When would you use each?</h3>
+              </div>
+              <div style="display:flex; align-items:center; gap:10px;">
+                <span class="q-difficulty easy">Easy</span>
+                <div class="q-toggle" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="question-body">
+              <p><strong>TCP (Transmission Control Protocol):</strong> Connection-oriented, reliable, ordered delivery, flow control, error correction. Higher overhead. Used for: web (HTTP), email (SMTP), file transfer (FTP).</p>
+              <p style="margin-top:8px;"><strong>UDP (User Datagram Protocol):</strong> Connectionless, unreliable, no ordering, low overhead. Fast. Used for: live streaming, DNS, VoIP, gaming, video calls.</p>
+              <p style="margin-top:8px; color:var(--blue-bright); font-size:0.85rem; font-weight:600;">🎯 Rule: Use TCP when accuracy matters. Use UDP when speed matters more than perfection.</p>
+            </div>
+          </div>
+
+          <div class="question-item" role="listitem" data-tag="hard">
+            <div class="question-header">
+              <div class="question-meta">
+                <span class="q-num">Q6</span>
+                <h3>Explain Banker's Algorithm for deadlock avoidance with a suitable example.</h3>
+              </div>
+              <div style="display:flex; align-items:center; gap:10px;">
+                <span class="q-difficulty hard">Hard</span>
+                <div class="q-toggle" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="question-body">
+              <p>Banker's Algorithm (Dijkstra) avoids deadlock by simulating resource allocation and checking for a "safe state" before granting requests.</p>
+              <p style="margin-top:8px;"><strong>Key Data Structures:</strong></p>
+              <p>• Available[]: Resources currently available</p>
+              <p>• Max[][]: Max demand of each process</p>
+              <p>• Allocation[][]: Currently allocated resources</p>
+              <p>• Need[][] = Max - Allocation</p>
+              <p style="margin-top:8px;"><strong>Safety Algorithm:</strong> Find a process whose Need ≤ Available. Simulate it finishing — add its Allocation back to Available. Repeat. If all processes finish, the state is safe.</p>
+              <p style="margin-top:8px; color:var(--blue-bright); font-size:0.85rem; font-weight:600;">🎯 This is a 10-mark question favorite. Practice with 5 processes × 3 resource types.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── PANEL 4: REFERENCES ──── -->
+      <div id="references" class="tab-panel" role="tabpanel" aria-labelledby="tab-references">
+        <p style="color:var(--slate); margin-bottom:28px; font-size:0.95rem;">Curated textbooks, YouTube channels, and online resources — hand-picked for Semester 4.</p>
+
+        <div class="references-grid">
+
+          <a href="#" class="ref-card fade-in" target="_blank" rel="noopener" aria-label="Operating System Concepts textbook">
+            <div class="ref-icon">📘</div>
+            <div class="ref-info">
+              <div class="ref-type">Textbook</div>
+              <div class="ref-title">Operating System Concepts</div>
+              <div class="ref-author">Silberschatz, Galvin & Gagne (10th Ed.)</div>
+            </div>
+          </a>
+
+          <a href="#" class="ref-card fade-in" target="_blank" rel="noopener" aria-label="Computer Networks textbook">
+            <div class="ref-icon">📗</div>
+            <div class="ref-info">
+              <div class="ref-type">Textbook</div>
+              <div class="ref-title">Computer Networks</div>
+              <div class="ref-author">Andrew S. Tanenbaum (5th Ed.)</div>
+            </div>
+          </a>
+
+          <a href="#" class="ref-card fade-in" target="_blank" rel="noopener" aria-label="Introduction to Automata Theory">
+            <div class="ref-icon">📙</div>
+            <div class="ref-info">
+              <div class="ref-type">Textbook</div>
+              <div class="ref-title">Introduction to Automata Theory</div>
+              <div class="ref-author">Hopcroft, Motwani & Ullman</div>
+            </div>
+          </a>
+
+          <a href="https://www.youtube.com/c/GateSmashers" class="ref-card fade-in" target="_blank" rel="noopener" aria-label="Gate Smashers YouTube channel">
+            <div class="ref-icon">▶️</div>
+            <div class="ref-info">
+              <div class="ref-type">YouTube</div>
+              <div class="ref-title">Gate Smashers</div>
+              <div class="ref-author">OS, Networks, TOC — full playlists</div>
+            </div>
+          </a>
+
+          <a href="https://www.geeksforgeeks.org" class="ref-card fade-in" target="_blank" rel="noopener" aria-label="GeeksForGeeks website">
+            <div class="ref-icon">🌐</div>
+            <div class="ref-info">
+              <div class="ref-type">Website</div>
+              <div class="ref-title">GeeksForGeeks</div>
+              <div class="ref-author">In-depth articles + practice problems</div>
+            </div>
+          </a>
+
+          <a href="https://nptel.ac.in" class="ref-card fade-in" target="_blank" rel="noopener" aria-label="NPTEL courses">
+            <div class="ref-icon">🎓</div>
+            <div class="ref-info">
+              <div class="ref-type">Online Course</div>
+              <div class="ref-title">NPTEL — IIT Lectures</div>
+              <div class="ref-author">Free certified OS & Networks courses</div>
+            </div>
+          </a>
+
+          <a href="https://roadmap.sh" class="ref-card fade-in" target="_blank" rel="noopener" aria-label="Developer Roadmaps">
+            <div class="ref-icon">🗺️</div>
+            <div class="ref-info">
+              <div class="ref-type">Guide</div>
+              <div class="ref-title">Developer Roadmaps</div>
+              <div class="ref-author">Frontend, Backend, Networking paths</div>
+            </div>
+          </a>
+
+          <a href="https://developer.mozilla.org" class="ref-card fade-in" target="_blank" rel="noopener" aria-label="MDN Web Docs">
+            <div class="ref-icon">📄</div>
+            <div class="ref-info">
+              <div class="ref-type">Documentation</div>
+              <div class="ref-title">MDN Web Docs</div>
+              <div class="ref-author">HTML5, CSS3, JavaScript reference</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ── FOOTER ──── -->
+  <footer role="contentinfo">
+    <div class="footer-inner container" style="padding-left:0; padding-right:0;">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo-wrap" aria-label="EduVault Home">
+          <svg class="logo-svg" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M21 2L4 10V22C4 30.8 11.5 38.7 21 41C30.5 38.7 38 30.8 38 22V10L21 2Z" fill="#1C3461" stroke="#2563EB" stroke-width="1.5"/>
+            <text x="9" y="27" font-family="Syne, sans-serif" font-weight="800" font-size="14" fill="#F8F9FC">E</text>
+            <text x="20" y="27" font-family="Syne, sans-serif" font-weight="800" font-size="14" fill="#3B82F6">V</text>
+          </svg>
+          <span class="logo-text">Edu<span>Vault</span></span>
+        </a>
+        <p>Your academic knowledge vault, purpose-built for Chitkara University B.Tech students.</p>
+      </div>
+      <nav class="footer-col" aria-label="Semester quick navigation">
+        <h4>Quick Nav</h4>
+        <ul>
+          <li><a href="#topics" onclick="document.querySelector('[data-tab=topics]').click()">Topics</a></li>
+          <li><a href="#theory" onclick="document.querySelector('[data-tab=theory]').click()">Theory</a></li>
+          <li><a href="#questions" onclick="document.querySelector('[data-tab=questions]').click()">Questions</a></li>
+          <li><a href="#references" onclick="document.querySelector('[data-tab=references]').click()">References</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Other semesters">
+        <h4>Other Semesters</h4>
+        <ul>
+          <li><a href="./semester-template.html?sem=1">Semester 1</a></li>
+          <li><a href="./semester-template.html?sem=2">Semester 2</a></li>
+          <li><a href="./semester-template.html?sem=3">Semester 3</a></li>
+          <li><a href="./semester-template.html?sem=5">Semester 5</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contribute</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom container" style="padding-left:0; padding-right:0;">
+      <p>© 2025 EduVault · Built for <a href="https://www.chitkara.edu.in" target="_blank" rel="noopener">Chitkara University</a> students</p>
+      <p style="color:var(--text-dim); font-size:0.8rem;">Open source · No login required</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

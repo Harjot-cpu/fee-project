@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduVault — Chitkara University Study Hub</title>
+  <meta name="description" content="Your academic knowledge vault. All 8 semesters of Chitkara University study material — organized, accessible, and beautifully designed." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
+</head>
+<body class="theme-host dark-theme">
+
+  <!-- Progress bar -->
+  <div class="progress-bar" aria-hidden="true"></div>
+
+  <!-- Announcement topbar -->
+  <div class="topbar" role="banner">
+    🎓 Semester 4 notes updated for 2024–25 batch &nbsp;·&nbsp;
+    <a href="#semesters">Browse all semesters →</a>
+  </div>
+
+  <!-- ── NAVBAR ───────────────────────────────── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="logo-wrap" aria-label="EduVault Home">
+      <!-- SVG Logo: E and V forming a shield -->
+      <svg class="logo-svg" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M21 2L4 10V22C4 30.8 11.5 38.7 21 41C30.5 38.7 38 30.8 38 22V10L21 2Z" fill="#1C3461" stroke="#2563EB" stroke-width="1.5"/>
+        <path d="M21 2L4 10V22C4 30.8 11.5 38.7 21 41C30.5 38.7 38 30.8 38 22V10L21 2Z" fill="url(#shield-grad)" opacity="0.3"/>
+        <!-- E -->
+        <text x="9" y="27" font-family="Syne, sans-serif" font-weight="800" font-size="14" fill="#F8F9FC">E</text>
+        <!-- V -->
+        <text x="20" y="27" font-family="Syne, sans-serif" font-weight="800" font-size="14" fill="#3B82F6">V</text>
+        <defs>
+          <linearGradient id="shield-grad" x1="4" y1="2" x2="38" y2="41" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#2563EB"/>
+            <stop offset="1" stop-color="#1C3461"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="logo-text">Edu<span>Vault</span></span>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#semesters">Semesters</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="pages/semester-template.html" class="nav-cta">Explore →</a></li>
+    </ul>
+
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="#semesters">Semesters</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="pages/semester-template.html" class="nav-cta" style="margin-top:8px;display:inline-block;text-align:center;border-radius:10px;padding:14px;">Explore Semesters →</a>
+  </div>
+
+  <!-- ── HERO SECTION ─────────────────────────── -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero-inner">
+      <!-- Left: copy -->
+      <div class="hero-copy">
+        <div class="hero-badge fade-in">
+          <span class="hero-badge-dot"></span>
+          Chitkara University · B.Tech
+        </div>
+
+        <h1 class="hero-title fade-in">
+          Your Academic<br>
+          <span class="highlight">Knowledge Vault.</span>
+        </h1>
+
+        <blockquote class="hero-quote fade-in">
+          <p>"The beautiful thing about learning is that no one can take it away from you."</p>
+          <cite>— B.B. King</cite>
+        </blockquote>
+
+        <p class="hero-desc fade-in" style="color:var(--slate); font-size:1rem; margin-bottom:0; line-height:1.75; max-width:480px;">
+          All 8 semesters. Every subject. Theory, practice questions, and curated references — beautifully organized for Chitkara students.
+        </p>
+
+        <div class="hero-actions fade-in" style="margin-top:32px;">
+          <a href="#semesters" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            Browse Semesters
+          </a>
+          <a href="#about" class="btn btn-outline">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: visual -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card-stack">
+          <!-- Main card -->
+          <div class="stat-card stat-card-main">
+            <div class="card-chip">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+              Active Semesters
+            </div>
+            <div class="semesters-mini">
+              <div class="sem-dot active">S1</div>
+              <div class="sem-dot active">S2</div>
+              <div class="sem-dot active">S3</div>
+              <div class="sem-dot active">S4</div>
+              <div class="sem-dot">S5</div>
+              <div class="sem-dot">S6</div>
+              <div class="sem-dot">S7</div>
+              <div class="sem-dot">S8</div>
+            </div>
+            <p style="font-size:0.78rem;color:var(--slate);margin-top:14px;">4 semesters fully stocked with resources</p>
+          </div>
+          <!-- Float card 1 -->
+          <div class="stat-card stat-card-float1">
+            <div class="mini-stat">
+              <span class="mini-stat-num">200+</span>
+              <span class="mini-stat-label">Questions</span>
+            </div>
+          </div>
+          <!-- Float card 2 -->
+          <div class="stat-card stat-card-float2">
+            <div class="mini-stat">
+              <span class="mini-stat-num">8</span>
+              <span class="mini-stat-label">Semesters</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATS BAR ─────────────────────────────── -->
+  <div class="stats-bar" aria-label="Key statistics">
+    <div class="stats-bar-inner">
+      <div class="stat-item fade-in">
+        <span class="stat-num" data-count="8" data-suffix="">8</span>
+        <span class="stat-desc">Semesters Covered</span>
+      </div>
+      <div class="stat-item fade-in">
+        <span class="stat-num" data-count="200" data-suffix="+">200+</span>
+        <span class="stat-desc">Practice Questions</span>
+      </div>
+      <div class="stat-item fade-in">
+        <span class="stat-num" data-count="50" data-suffix="+">50+</span>
+        <span class="stat-desc">Curated References</span>
+      </div>
+      <div class="stat-item fade-in">
+        <span class="stat-num" data-count="100" data-suffix="%">100%</span>
+        <span class="stat-desc">Free Access</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SEMESTERS GRID ─────────────────────────── -->
+  <section id="semesters" aria-labelledby="sem-heading">
+    <div class="semesters-inner container" style="padding-top:100px; padding-bottom:100px;">
+      <div class="section-header fade-in">
+        <span class="section-eyebrow">Select Your Semester</span>
+        <h2 class="section-title" id="sem-heading">All 8 Semesters,<br>One Place.</h2>
+        <p class="section-subtitle">Tap any semester to access topics, theory notes, practice questions, and references — all organized for you.</p>
+      </div>
+
+      <!-- Search & Filter bar -->
+      <div class="filter-bar fade-in">
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input class="search-input" type="search" placeholder="Search semester or subject…" aria-label="Search semesters" />
+        </div>
+        <div class="filter-chips" role="group" aria-label="Filter by year">
+          <button class="filter-chip active" data-filter="all">All Years</button>
+          <button class="filter-chip" data-filter="y1">Year 1</button>
+          <button class="filter-chip" data-filter="y2">Year 2</button>
+          <button class="filter-chip" data-filter="y3">Year 3</button>
+          <button class="filter-chip" data-filter="y4">Year 4</button>
+        </div>
+      </div>
+
+      <!-- Semester Cards -->
+      <div class="semesters-grid" role="list">
+
+        <a href="pages/semester-template.html?sem=1" class="semester-card fade-in" role="listitem" data-category="y1" aria-label="Semester 1">
+          <div class="sem-num">01</div>
+          <h3 class="sem-title">Semester 1</h3>
+          <p class="sem-desc">Mathematics, Physics, Programming fundamentals & Engineering Drawing.</p>
+          <div class="sem-tags">
+            <span class="sem-tag">Maths</span>
+            <span class="sem-tag">Physics</span>
+            <span class="sem-tag">C Programming</span>
+          </div>
+          <div class="sem-arrow">
+            <span>Open Vault</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <a href="pages/semester-template.html?sem=2" class="semester-card fade-in" role="listitem" data-category="y1" aria-label="Semester 2">
+          <div class="sem-num">02</div>
+          <h3 class="sem-title">Semester 2</h3>
+          <p class="sem-desc">Chemistry, Mathematics II, Data Structures & Communication Skills.</p>
+          <div class="sem-tags">
+            <span class="sem-tag">Maths II</span>
+            <span class="sem-tag">Chemistry</span>
+            <span class="sem-tag">DSA</span>
+          </div>
+          <div class="sem-arrow">
+            <span>Open Vault</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <a href="pages/semester-template.html?sem=3" class="semester-card fade-in" role="listitem" data-category="y2" aria-label="Semester 3">
+          <div class="sem-num">03</div>
+          <h3 class="sem-title">Semester 3</h3>
+          <p class="sem-desc">OOP with Java, Digital Electronics, Discrete Math & Database Systems.</p>
+          <div class="sem-tags">
+            <span class="sem-tag">Java OOP</span>
+            <span class="sem-tag">DBMS</span>
+            <span class="sem-tag">Discrete Math</span>
+          </div>
+          <div class="sem-arrow">
+            <span>Open Vault</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <a href="pages/semester-template.html?sem=4" class="semester-card fade-in" role="listitem" data-category="y2" aria-label="Semester 4">
+          <div class="sem-num">04</div>
+          <h3 class="sem-title">Semester 4</h3>
+          <p class="sem-desc">Operating Systems, Computer Networks, Theory of Computation & Web Dev.</p>
+          <div class="sem-tags">
+            <span class="sem-tag">OS</span>
+            <span class="sem-tag">Networking</span>
+            <span class="sem-tag">TOC</span>
+          </div>
+          <div class="sem-arrow">
+            <span>Open Vault</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <a href="pages/semester-template.html?sem=5" class="semester-card fade-in" role="listitem" data-category="y3" aria-label="Semester 5">
+          <div class="sem-num">05</div>
+          <h3 class="sem-title">Semester 5</h3>
+          <p class="sem-desc">Algorithms, Software Engineering, Computer Architecture & Electives.</p>
+          <div class="sem-tags">
+            <span class="sem-tag">Algorithms</span>
+            <span class="sem-tag">SE</span>
+            <span class="sem-tag">COA</span>
+          </div>
+          <div class="sem-arrow">
+            <span>Open Vault</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <a href="pages/semester-template.html?sem=6" class="semester-card fade-in" role="listitem" data-category="y3" aria-label="Semester 6">
+          <div class="sem-num">06</div>
+          <h3 class="sem-title">Semester 6</h3>
+          <p class="sem-desc">Compiler Design, AI/ML fundamentals, Cloud Computing & Minor Project.</p>
+          <div class="sem-tags">
+            <span class="sem-tag">AI/ML</span>
+            <span class="sem-tag">Compiler</span>
+            <span class="sem-tag">Cloud</span>
+          </div>
+          <div class="sem-arrow">
+            <span>Open Vault</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <a href="pages/semester-template.html?sem=7" class="semester-card fade-in" role="listitem" data-category="y4" aria-label="Semester 7">
+          <div class="sem-num">07</div>
+          <h3 class="sem-title">Semester 7</h3>
+          <p class="sem-desc">Deep Learning, Distributed Systems, IoT, Major Project — Phase 1.</p>
+          <div class="sem-tags">
+            <span class="sem-tag">Deep Learning</span>
+            <span class="sem-tag">IoT</span>
+            <span class="sem-tag">Project</span>
+          </div>
+          <div class="sem-arrow">
+            <span>Open Vault</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <a href="pages/semester-template.html?sem=8" class="semester-card fade-in" role="listitem" data-category="y4" aria-label="Semester 8">
+          <div class="sem-num">08</div>
+          <h3 class="sem-title">Semester 8</h3>
+          <p class="sem-desc">Big Data, Cybersecurity, Entrepreneurship & Major Project — Phase 2.</p>
+          <div class="sem-tags">
+            <span class="sem-tag">Big Data</span>
+            <span class="sem-tag">Security</span>
+            <span class="sem-tag">Final Project</span>
+          </div>
+          <div class="sem-arrow">
+            <span>Open Vault</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT / FEATURES ──────────────────────── -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="about-inner container" style="padding-top:100px; padding-bottom:100px;">
+      <!-- Visual grid -->
+      <div class="about-visual" aria-hidden="true">
+        <div class="feat-card fade-in">
+          <div class="feat-icon">📚</div>
+          <h3>Structured Notes</h3>
+          <p>Topic-by-topic theory notes aligned with Chitkara's curriculum.</p>
+        </div>
+        <div class="feat-card fade-in">
+          <div class="feat-icon">🧩</div>
+          <h3>Practice Questions</h3>
+          <p>Previous year & model questions with difficulty labels.</p>
+        </div>
+        <div class="feat-card fade-in">
+          <div class="feat-icon">🔗</div>
+          <h3>Curated References</h3>
+          <p>Books, YouTube playlists & research papers per subject.</p>
+        </div>
+        <div class="feat-card fade-in">
+          <div class="feat-icon">📱</div>
+          <h3>Mobile Ready</h3>
+          <p>Study on your phone, tablet, or laptop — anywhere.</p>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="about-content fade-in">
+        <span class="section-eyebrow">Why EduVault?</span>
+        <h2 class="section-title" id="about-heading" style="text-align:left; margin-bottom:0;">Built by students,<br>for students.</h2>
+        <ul class="about-list">
+          <li>
+            <div class="check-icon" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            Curriculum aligned with Chitkara University B.Tech program
+          </li>
+          <li>
+            <div class="check-icon" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            Organized into Topics, Theory, Questions & References
+          </li>
+          <li>
+            <div class="check-icon" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            Smart search & filters to find what you need instantly
+          </li>
+          <li>
+            <div class="check-icon" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            100% free — no login, no paywalls, no distractions
+          </li>
+        </ul>
+        <a href="pages/semester-template.html" class="btn btn-primary">
+          Start Learning
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ───────────────────────────────── -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="contact-inner container" style="padding-top:100px; padding-bottom:100px;">
+      <div class="section-header fade-in">
+        <span class="section-eyebrow">Get in Touch</span>
+        <h2 class="section-title" id="contact-heading">Suggest. Contribute. Connect.</h2>
+        <p class="section-subtitle">Found an error or want to add resources for your semester? We'd love to hear from you.</p>
+      </div>
+      <form class="contact-form fade-in" novalidate aria-label="Contact form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input id="name" name="name" type="text" placeholder="e.g. Harjot Singh" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="you@chitkara.edu.in" required autocomplete="email" />
+          </div>
+        </div>
+        <div class="form-group full">
+          <label for="semester">Related Semester</label>
+          <select id="semester" name="semester">
+            <option value="">Select a semester…</option>
+            <option value="1">Semester 1</option>
+            <option value="2">Semester 2</option>
+            <option value="3">Semester 3</option>
+            <option value="4">Semester 4</option>
+            <option value="5">Semester 5</option>
+            <option value="6">Semester 6</option>
+            <option value="7">Semester 7</option>
+            <option value="8">Semester 8</option>
+            <option value="general">General Feedback</option>
+          </select>
+        </div>
+        <div class="form-group full">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Describe the topic, resource, or correction you'd like to suggest…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:4px;">
+          Send Message
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ───────────────────────────────── -->
+  <footer role="contentinfo">
+    <div class="footer-inner container" style="padding-left:0; padding-right:0;">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-wrap" aria-label="EduVault Home">
+          <svg class="logo-svg" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M21 2L4 10V22C4 30.8 11.5 38.7 21 41C30.5 38.7 38 30.8 38 22V10L21 2Z" fill="#1C3461" stroke="#2563EB" stroke-width="1.5"/>
+            <text x="9" y="27" font-family="Syne, sans-serif" font-weight="800" font-size="14" fill="#F8F9FC">E</text>
+            <text x="20" y="27" font-family="Syne, sans-serif" font-weight="800" font-size="14" fill="#3B82F6">V</text>
+          </svg>
+          <span class="logo-text">Edu<span>Vault</span></span>
+        </a>
+        <p>Your academic knowledge vault, purpose-built for Chitkara University B.Tech students.</p>
+      </div>
+      <nav class="footer-col" aria-label="Semesters">
+        <h4>Semesters</h4>
+        <ul>
+          <li><a href="pages/semester-template.html?sem=1">Semester 1</a></li>
+          <li><a href="pages/semester-template.html?sem=2">Semester 2</a></li>
+          <li><a href="pages/semester-template.html?sem=3">Semester 3</a></li>
+          <li><a href="pages/semester-template.html?sem=4">Semester 4</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="More semesters">
+        <h4>More</h4>
+        <ul>
+          <li><a href="pages/semester-template.html?sem=5">Semester 5</a></li>
+          <li><a href="pages/semester-template.html?sem=6">Semester 6</a></li>
+          <li><a href="pages/semester-template.html?sem=7">Semester 7</a></li>
+          <li><a href="pages/semester-template.html?sem=8">Semester 8</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Quick links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contribute</a></li>
+          <li><a href="https://www.chitkara.edu.in" target="_blank" rel="noopener">Chitkara Uni</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom container" style="padding-left:0; padding-right:0;">
+      <p>© 2025 EduVault · Built for <a href="https://www.chitkara.edu.in" target="_blank" rel="noopener">Chitkara University</a> students</p>
+      <p style="color:var(--text-dim); font-size:0.8rem;">Open source · No login required</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
